@@ -9,5 +9,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsmatos10/proj_Cypress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lsmatos10/proj_Cypress/issues"
+  },
+  "homepage": "https://github.com/lsmatos10/proj_Cypress#readme",
+  "devDependencies": {
+    "cypress": "^15.7.1"
+  }
 }

@@ -20,5 +20,8 @@
   "homepage": "https://github.com/lsmatos10/proj_Cypress#readme",
   "devDependencies": {
     "cypress": "^15.7.1"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2"
   }
 }

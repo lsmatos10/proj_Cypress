@@ -1,0 +1,8 @@
+{
+    "cria_usuario": {
+        "nome": "Ciclano de tal",
+        "email": "email12@teste.com.br",
+        "password": "inicio123",
+        "administrador": "true"
+    }
+}

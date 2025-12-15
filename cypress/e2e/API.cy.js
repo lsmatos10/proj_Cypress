@@ -6,7 +6,7 @@ describe('API do Serverest', () => {
   it('Criar usuário', () => {
     email = `teste_${Date.now()}@qa.com.br`
 
-    cy.request({
+    cy.api({
       method: 'POST',
       url: 'https://serverest.dev/usuarios',
       body: {
@@ -24,7 +24,7 @@ describe('API do Serverest', () => {
   })
 
   it('Listar usuários', () => {
-    cy.request({
+    cy.api({
       method: 'GET',
       url: 'https://serverest.dev/usuarios'
     }).then((response) => {
@@ -33,7 +33,7 @@ describe('API do Serverest', () => {
   })
 
   it('Buscar usuário por ID', () => {
-    cy.request({
+    cy.api({
       method: 'GET',
       url: `https://serverest.dev/usuarios/${userId}`
     }).then((response) => {
@@ -43,7 +43,7 @@ describe('API do Serverest', () => {
   })
 
   it('Atualizar usuário', () => {
-    cy.request({
+    cy.api({
       method: 'PUT',
       url: `https://serverest.dev/usuarios/${userId}`,
       body: {
@@ -59,7 +59,7 @@ describe('API do Serverest', () => {
   })
 
   it('Excluir Usuario', () => {
-    cy.request({
+    cy.api({
         method: 'DELETE',
         url: `https://serverest.dev/usuarios/${userId}`,
     }).then((response) => {
